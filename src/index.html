@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Cardboard 3d Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="divider"></div>
+  <div class="image-wrapper image-wrapper-1">
+    <img src="1.jpg" alt="" class="image">
+  </div>
+
+  <div class="image-wrapper image-wrapper-2">
+    <img src="2.jpg" alt="" class="image">
+  </div>
+
+  <button id="fs-button">Fullscreen</button>
+</body>
+
+<script>
+    var btn = document.querySelector('#fs-button');
+    var doc = window.document;
+    var docEl = doc.documentElement;
+    var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+
+    btn.addEventListener("click", function() {
+      requestFullScreen.call(docEl);
+   }, false);
+
+</script>
+</html>
+
