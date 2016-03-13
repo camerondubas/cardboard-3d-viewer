@@ -43,7 +43,7 @@ table {
 }
 
 
-body {
+body, html {
   background: black;
 }
 
@@ -58,12 +58,13 @@ body {
 
 .image-wrapper {
   width: 50vw;
-  height: 100vh;
+  height: 76vh;
   overflow: hidden;
   float: left;
+  margin-top: 12vh;
 }
 
 .image {
   height: 100%;
-  transform: translateX(-25%);
+  /*transform: translateX(-15%);*/
 }
