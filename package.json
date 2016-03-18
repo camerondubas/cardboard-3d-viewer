@@ -18,5 +18,8 @@
   "homepage": "https://github.com/camerondubas/cardboard-3d-viewer#readme",
   "dependencies": {
     "node-static": "^0.7.7"
+  },
+  "devDependencies": {
+    "react": "^0.14.7"
   }
 }
